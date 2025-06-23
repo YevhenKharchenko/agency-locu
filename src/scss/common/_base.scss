@@ -42,6 +42,14 @@ html {
   }
 }
 
+.section {
+  scroll-margin-top: 60px;
+
+  @include media(desktop) {
+    scroll-margin-top: 60px;
+  }
+}
+
 .section-title {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -49,6 +57,7 @@ html {
   text-transform: uppercase;
   color: #fc0;
   margin-bottom: 5px;
+  line-height: 1.5;
 
   @include media(desktop) {
     font-size: 24px;
@@ -56,10 +65,21 @@ html {
   }
 }
 
-.section {
-  scroll-margin-top: 60px;
+.section-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #edfcff;
+  margin-bottom: 25px;
+  background-image: linear-gradient(to right, #fc0 0%, transparent 100%);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100% 2px;
+  max-width: max-content;
+  line-height: 1.5;
 
   @include media(desktop) {
-    scroll-margin-top: 60px;
+    font-size: 42px;
+    margin-bottom: 48px;
   }
 }

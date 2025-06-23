@@ -1,26 +1,23 @@
-.about-section {
+.missions-section {
   padding-top: 45px;
   padding-bottom: 45px;
 
   @include media(desktop) {
-    padding-top: 140px;
-    padding-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 219px;
     position: relative;
     max-width: 1440px;
     margin: 0 auto;
   }
 }
 
-.about-text-wrapper {
-  margin-bottom: 25px;
-
+.missions-text-wrapper {
   @include media(desktop) {
-    margin-bottom: 0;
     max-width: 756px;
   }
 }
 
-.about-text {
+.missions-text {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -28,12 +25,16 @@
   line-height: 1.5;
   margin-bottom: 25px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @include media(desktop) {
     font-size: 24px;
   }
 }
 
-.about-btn {
+.missions-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,7 +54,7 @@
   }
 }
 
-.about-img {
+.missions-img {
   @include media(desktop) {
     position: absolute;
     bottom: 120px;
