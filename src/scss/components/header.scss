@@ -1,14 +1,11 @@
 .header {
-  padding: 13px 0;
+  box-shadow: 0 4px 4px 0 rgba(255, 204, 0, 0.25);
+  background: #0b0a08;
+  padding: 15px 0;
   position: fixed;
   width: 100%;
   top: 0;
-  background: #000;
   z-index: 10;
-
-  @include media(desktop) {
-    padding: 14px 0;
-  }
 }
 
 .header-container {
@@ -17,22 +14,32 @@
   align-items: center;
 
   @include media(desktop) {
-    padding: 0 157px;
-    justify-content: center;
+    justify-content: start;
   }
 }
 
 .nav {
   display: flex;
   align-items: center;
+
+  @include media(desktop) {
+    gap: 147px;
+  }
+}
+
+.nav-list {
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
 }
 
 .header-logo-link {
   width: 50px;
-  height: 50px;
+  height: 40px;
 
   @include media(desktop) {
-    display: none;
   }
 }
 
@@ -42,35 +49,33 @@
   @include media(desktop) {
     display: flex;
     align-items: center;
-    justify-content: end;
   }
 }
 
 .nav-list-item {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .nav-list-link {
   @include media(desktop) {
-    padding: 8px 24px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    color: #fff;
+    padding: 8px 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edfcff;
     transition: all 0.3s ease-in-out;
 
     &:hover,
     &.active {
-      background: #fffaef;
-      color: #000;
+      color: #fc0;
     }
   }
 }
 
 .nav-list-link.active {
-  background: #fffaef;
-  color: #000;
+  color: #fc0;
 }
 
 .nav-btn {

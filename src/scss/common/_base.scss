@@ -55,3 +55,11 @@ html {
     margin-bottom: 24px;
   }
 }
+
+.section {
+  scroll-margin-top: 60px;
+
+  @include media(desktop) {
+    scroll-margin-top: 60px;
+  }
+}
