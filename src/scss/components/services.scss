@@ -1,0 +1,183 @@
+.services-section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  scroll-margin-top: 60px;
+
+  @include media(desktop) {
+    scroll-margin-top: 70px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
+.services-section-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.services-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.services-title {
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    margin-bottom: 48px;
+  }
+}
+
+.controls {
+  display: none;
+
+  @include media(desktop) {
+    position: absolute;
+    top: 23px;
+    left: 72px;
+    width: 100%;
+    max-width: 1296px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.arrow-btn {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    background: none;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid #373330;
+    }
+
+    &[disabled] {
+      opacity: 0.5;
+      cursor: not-allowed;
+
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+}
+
+.arrow-icon {
+  @include media(desktop) {
+    fill: none;
+    stroke: #373330;
+  }
+}
+
+.left-arrow-icon {
+  transform: rotate(180deg);
+}
+
+.services-swiper-container {
+  max-width: 255px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.services-swiper-container.show {
+  visibility: visible;
+}
+
+.services-slide {
+  padding: 0;
+  max-width: 255px;
+
+  @include media(desktop) {
+    padding: 16px;
+    max-width: 416px;
+  }
+}
+
+.services-circle-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 15px;
+
+  @include media(desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+.services-icon {
+  @include media(desktop) {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.services-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #373330;
+  margin-bottom: 15px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+}
+
+.services-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #373330;
+  word-break: break-word;
+
+  @include media(desktop) {
+    font-size: 22px;
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-bottom: 2px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.services-dot {
+  width: 4px;
+  height: 4px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 100%;
+  background-color: #373330;
+  cursor: pointer;
+}
+
+.services-dot.active {
+  transform: scale(2);
+}
