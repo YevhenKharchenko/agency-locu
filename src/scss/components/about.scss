@@ -46,6 +46,13 @@
   text-align: center;
   color: #0b0a08;
   width: 100%;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:active {
+    background: #edfcff;
+    color: #0b0a08;
+  }
 
   @include media(desktop) {
     max-width: 426px;

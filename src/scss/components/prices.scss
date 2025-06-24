@@ -7,6 +7,7 @@
   background-size: cover;
 
   @include media(desktop) {
+    scroll-margin-top: 100px;
     padding-top: 0;
     padding-bottom: 52px;
     background-image: url(../img/prices/prices-bg-desk.png);
